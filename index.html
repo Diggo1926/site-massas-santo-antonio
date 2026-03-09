@@ -42,7 +42,7 @@
             </div>
           </div>
           <!-- Desktop Navigation -->
-          <div class="flex flex-wrap justify-end items-center gap-3 md:gap-8">
+          <div class="hidden md:flex items-center gap-8">
             <a href="#home" class="nav-link text-sm font-medium" style="color: #2c2c2c;">Início</a>
             <a href="#sobre" class="nav-link text-sm font-medium" style="color: #2c2c2c;">Sobre</a>
             <a href="#produtos" class="nav-link text-sm font-medium" style="color: #2c2c2c;">Produtos</a>
@@ -51,20 +51,45 @@
             <a href="#contato" class="btn-primary px-5 py-2 rounded-full text-sm font-medium">Contato</a>
           </div>
           <!-- Mobile Menu Button -->
-          <div class="md:hidden">
-            <button id="mobile-menu-button" class="text-gray-800 focus:outline-none" aria-label="Toggle mobile menu">
-              <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
+          
         </div>
       </div>
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden">
-        <a href="#home" class="block px-4 py-2 text-sm font-medium" style="color: #2c2c2c;">Início</a>
-        <a href="#sobre" class="block px-4 py-2 text-sm font-medium" style="color: #2c2c2c;">Sobre</a>
-        <a href="#produtos" class="block px-4 py-2 text-sm font-medium" style="color: #2c2c2c;">Produtos</a>
-        <a href="#processo" class="block px-4 py-2 text-sm font-medium" style="color: #2c2c2c;">Processo</a>
-        <a href="#distribuicao" class="block px-4 py-2 text-sm font-medium" style="color: #2c2c2c;">Distribuição</a>
-        <a href="#contato" class="block mt-3 mx-4 px-5 py-3 rounded-full text-sm font-medium text-center btn-primary">Contato</a>
+      <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background-color: rgba(255,255,255,0.95); backdrop-filter: blur(10px);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="flex items-center justify-between py-3">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+  
+  <!-- Logo -->
+  <img src="imagens/apple-touch-icon.png"class="w-12 h-12 rounded-full object-cover">
+
+  <!-- Nome da empresa -->
+  <div class="leading-tight">
+    <h1 class="font-semibold text-lg text-[#8b7355]">
+      Santo Antônio
+    </h1>
+
+    <p class="text-xs" style="color: #2d5a27;">
+      Massas Alimentícias
+    </p>
+  </div>
+
+</div>
+      <!-- Menu -->
+      <div class="flex flex-wrap justify-end items-center gap-x-4 gap-y-2 text-sm md:text-base max-w-[60%]">
+        <a href="#home" class="nav-link font-medium" style="color: #2c2c2c;">Início</a>
+        <a href="#sobre" class="nav-link font-medium" style="color: #2c2c2c;">Sobre</a>
+        <a href="#produtos" class="nav-link font-medium" style="color: #2c2c2c;">Produtos</a>
+        <a href="#processo" class="nav-link font-medium" style="color: #2c2c2c;">Processo</a>
+        <a href="#distribuicao" class="nav-link font-medium" style="color: #2c2c2c;">Distribuição</a>
+        <a href="#contato" class="btn-primary px-4 py-2 rounded-full font-medium">Contato</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
     </nav>
 
     <!-- Hero Section -->
@@ -135,7 +160,7 @@
    <!-- Stats Section -->
 <section class="py-12 section-pattern" style="background-color: #faf8f3;">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+    <div class="flex flex-wrap justify-center gap-6">
 
       <div class="text-center p-6 rounded-2xl" style="background-color: white;">
         <div class="text-3xl md:text-4xl font-bold font-display" style="color: #8b6f47;">50+</div>
@@ -196,18 +221,18 @@
             <div class="grid grid-cols-2 gap-4">
               <div class="space-y-4">
                 <div class="rounded-2xl overflow-hidden" style="background: linear-gradient(145deg, #2d5a27, #1a3d16);">
-                  <div class="aspect-square flex items-center justify-center"><span class="text-6xl">🏭</span></div>
+                  <div class="aspect-square flex items-center justify-center"><span class="text-6xl"></span></div>
                 </div>
                 <div class="rounded-2xl overflow-hidden" style="background: linear-gradient(145deg, #8b7355, #6d5a44);">
-                  <div class="aspect-video flex items-center justify-center"><span class="text-4xl">🌾</span></div>
+                  <div class="aspect-video flex items-center justify-center"><span class="text-4xl"></span></div>
                 </div>
               </div>
               <div class="space-y-4 pt-8">
                 <div class="rounded-2xl overflow-hidden" style="background: linear-gradient(145deg, #f5f1e8, #e8e0d0);">
-                  <div class="aspect-video flex items-center justify-center"><span class="text-4xl">👨‍👩‍👧‍👦</span></div>
+                  <div class="aspect-video flex items-center justify-center"><span class="text-4xl"></span></div>
                 </div>
                 <div class="rounded-2xl overflow-hidden" style="background: linear-gradient(145deg, #2d5a27, #1a3d16);">
-                  <div class="aspect-square flex items-center justify-center"><img src="imagens/biscoito_doce.png" alt="Biscoito doce" class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-4 border-white"></div>
+                  <div class="aspect-square flex items-center justify-center"><span class="text-4xl"></span></div>
                 </div>
               </div>
             </div>
@@ -236,7 +261,7 @@
           <div class="product-card rounded-3xl overflow-hidden card-hover shadow-lg">
             <div class="aspect-square flex items-center justify-center p-8" style="background: linear-gradient(145deg, #fff9f0, #f5ebe0);">
               <div class="text-center">
-                <span class="text-7xl block mb-4">🍪</span>
+                <span class="text-7xl block mb-4"></span>
                 <div class="px-3 py-1 rounded-full text-xs font-medium inline-block" style="background-color: #2d5a27; color: white;">Mais Vendido</div>
               </div>
             </div>
@@ -252,7 +277,7 @@
           <div class="product-card rounded-3xl overflow-hidden card-hover shadow-lg">
             <div class="aspect-square flex items-center justify-center p-8" style="background: linear-gradient(145deg, #f5f0e5, #e8e0d0);">
               <div class="text-center">
-                <span class="text-7xl block mb-4">🥠</span>
+                <span class="text-7xl block mb-4"></span>
                 <div class="px-3 py-1 rounded-full text-xs font-medium inline-block" style="background-color: #8b7355; color: white;">Artesanal</div>
               </div>
             </div>
@@ -268,7 +293,7 @@
           <div class="product-card rounded-3xl overflow-hidden card-hover shadow-lg">
             <div class="aspect-square flex items-center justify-center p-8" style="background: linear-gradient(145deg, #faf5ef, #efe5d8);">
               <div class="text-center">
-                <span class="text-7xl block mb-4">🧇</span>
+                <span class="text-7xl block mb-4"></span>
                 <div class="px-3 py-1 rounded-full text-xs font-medium inline-block" style="background-color: #2d5a27; color: white;">Premium</div>
               </div>
             </div>
@@ -284,7 +309,7 @@
           <div class="product-card rounded-3xl overflow-hidden card-hover shadow-lg">
             <div class="aspect-square flex items-center justify-center p-8" style="background: linear-gradient(145deg, #f8f3e8, #ebe3d5);">
               <div class="text-center">
-                <span class="text-7xl block mb-4">🍝</span>
+                <span class="text-7xl block mb-4"></span>
                 <div class="px-3 py-1 rounded-full text-xs font-medium inline-block" style="background-color: #8b7355; color: white;">Clássico</div>
               </div>
             </div>
@@ -300,7 +325,7 @@
           <div class="product-card rounded-3xl overflow-hidden card-hover shadow-lg">
             <div class="aspect-square flex items-center justify-center p-8" style="background: linear-gradient(145deg, #fff8f0, #f5ebe0);">
               <div class="text-center">
-                <span class="text-7xl block mb-4">🥖</span>
+                <span class="text-7xl block mb-4"></span>
                 <div class="px-3 py-1 rounded-full text-xs font-medium inline-block" style="background-color: #2d5a27; color: white;">Novidade</div>
               </div>
             </div>
@@ -316,7 +341,7 @@
           <div class="product-card rounded-3xl overflow-hidden card-hover shadow-lg">
             <div class="aspect-square flex items-center justify-center p-8" style="background: linear-gradient(145deg, #f5f0e5, #e8dfd0);">
               <div class="text-center">
-                <span class="text-7xl block mb-4">🌿</span>
+                <span class="text-7xl block mb-4"></span>
                 <div class="px-3 py-1 rounded-full text-xs font-medium inline-block" style="background-color: #8b7355; color: white;">Natural</div>
               </div>
             </div>
@@ -355,7 +380,7 @@
           <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="relative text-center">
               <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-lg relative z-10" style="background-color: #2d5a27;">
-                <span class="text-3xl">🌾</span>
+                <span class="text-3xl"></span>
               </div>
               <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold" style="background-color: #f5f1e8; color: #2d5a27;">1</div>
               <h3 class="font-display text-xl font-bold mb-3" style="color: #2c2c2c;">Seleção</h3>
@@ -363,7 +388,7 @@
             </div>
             <div class="relative text-center">
               <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-lg relative z-10" style="background-color: #2d5a27;">
-                <span class="text-3xl">🥣</span>
+                <span class="text-3xl"></span>
               </div>
               <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold" style="background-color: #f5f1e8; color: #2d5a27;">2</div>
               <h3 class="font-display text-xl font-bold mb-3" style="color: #2c2c2c;">Preparo</h3>
@@ -371,7 +396,7 @@
             </div>
             <div class="relative text-center">
               <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-lg relative z-10" style="background-color: #2d5a27;">
-                <span class="text-3xl">🏭</span>
+                <span class="text-3xl"></span>
               </div>
               <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold" style="background-color: #f5f1e8; color: #2d5a27;">3</div>
               <h3 class="font-display text-xl font-bold mb-3" style="color: #2c2c2c;">Produção</h3>
@@ -379,7 +404,7 @@
             </div>
             <div class="relative text-center">
               <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-lg relative z-10" style="background-color: #2d5a27;">
-                <span class="text-3xl">📦</span>
+                <span class="text-3xl"></span>
               </div>
               <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold" style="background-color: #f5f1e8; color: #2d5a27;">4</div>
               <h3 class="font-display text-xl font-bold mb-3" style="color: #2c2c2c;">Embalagem</h3>
